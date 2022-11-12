@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+        <link rel="stylesheet" href="styles-1.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <button class="createNote" onclick="createNewNote()">Create a new note</button>
+            <div class="setOfItems">        
+            </div>
+    
+            <input type="text" class="inputTitle">
+            <textarea class="inputContent"></textarea>
+            <button id="saveBtn" onclick="saveNote()">Save</button>
+            <button id="deleteBtn" onclick="deleteBtn()">Delete</button>
+            
+        </div>
+        <script src="index-1.js"></script>
+    </body>
+</html>
