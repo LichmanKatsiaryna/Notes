@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Vertical Slider | JavaScript</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="slider-container">
+            <div class="left-slide">
+                <div class="creation" style="background-image: linear-gradient(to right, #FFFFFF, #EBEBEB, #D6D6D6, #C2C2C2, #ADADAD, #999999);">
+                    <h1>Creation</h1>
+                    <p>Create your new note</p>
+                </div>
+                <div class="main-title" style="background-image: linear-gradient(to right, #FFFFFF, #EBEBEB, #D6D6D6, #C2C2C2, #ADADAD, #999999);">
+                    <h1>Notes App</h1>
+                    <p>Here you can create your notes</p>
+                </div>
+            </div>
+            <div class="right-slide">
+                <div style="background-image: linear-gradient(to right, #999999, #858585, #707070, #5C5C5C, #474747, #333333); color: white;">
+                    <div class="setOfItems"></div>
+                </div>
+                <div style="background-image: linear-gradient(to right, #999999, #858585, #707070, #5C5C5C, #474747, #333333); color: aliceblue;">
+                    <div class="container">
+                        <input type="text" class="inputTitle" placeholder="Here is your title...">
+                        <textarea class="inputContent" placeholder="Here is your content..."></textarea>
+                        <button id="saveBtn" onclick="saveNote()">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="down-button">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                    <br>
+                <button class="up-button">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+        <script src="style.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
